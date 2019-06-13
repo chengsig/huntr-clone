@@ -1,8 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
+import fetchItems from "./Api";
 import './App.css';
 
 function App() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: true,
+      jobs: [],
+    };
+
+    //this.addJob = this.addJob.bind(this);
+  }
+
+  /** Load data from backend. */
+
+  async componentDidMount() {
+    let jobs = await fetchItems();
+    this.setState({ jobs, isLoading: false });
+  }
+
   return (
     <div className="App">
       <header className="App-header">
