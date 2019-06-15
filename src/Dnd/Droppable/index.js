@@ -15,7 +15,7 @@ export default class Droppbale extends Component {
 
     render () {
         return (
-            <div id={this.props.id} onDrop={this.drop} onDrag={this.allowDrop} style={this.props.style}>
+            <div id={this.props.id} onDrop={this.drop} onDragOver={this.allowDrop} style={this.props.style}>
                 {this.props.children}
             </div>
         )
