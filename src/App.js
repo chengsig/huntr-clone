@@ -4,6 +4,7 @@ import Popup from "reactjs-popup";
 import Draggable from './Dnd/Draggable';
 import Droppable from './Dnd/Droppable';
 import AddJobForm from './AddJobForm';
+import Job from './JobCard';
 
 const Wrapper = styled.div`
     width: 100%;
@@ -61,7 +62,7 @@ export default class DndComponent extends Component {
                     <Droppable id='dr1' style = {droppableStyle}>
                         applied
                         <Draggable id='item1' style={draggableStyle}>
-                            <Item>job1</Item>
+                            <Job/>
                         </Draggable>
                         <Draggable id='item2' style={draggableStyle}>
                             <Item>job2</Item>
