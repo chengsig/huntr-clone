@@ -1,43 +1,86 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import { fetchItems } from "./Api";
-import DndComponent from './Dnd/DndComponent';
-import './App.css';
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Popup from "reactjs-popup";
+import Draggable from './Dnd/Draggable';
+import Droppable from './Dnd/Droppable';
+import AddJobForm from './AddJobForm';
 
-function App() {
-  const [jobs, setJobs] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+const Wrapper = styled.div`
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+`;
 
-  /** Load data from backend. */
-  useEffect(() => {
-    async function fetchData() {
-      const result = await fetchItems();
-      setJobs(result.data);
-      setIsLoading(false);
+const Item = styled.div`
+    padding: 8px;
+    color: #555;
+    backgroundColor: white;
+    border-radius: 3px;
+`;
+
+const Button = styled.button`
+    background: #e6fff7;
+    border-radius: 5px;
+    border: 2px solid #308d84;
+    color: #308d84;
+    margin: 8px;
+    padding: 0.25em 1em;
+`;
+
+const contentStyle = {
+    maxWidth: "600px",
+    width: "90%"
+};
+
+const droppableStyle = {
+    backgroundColor: '#555',
+    color: 'white',
+    width: '250px',
+    height: '400px',
+    margin: '32px',
+};
+
+const draggableStyle = {
+    backgroundColor: 'white',
+    margin: '8px',
+};
+
+export default class DndComponent extends Component {
+    render () {
+        return (
+            <div>
+                <Popup trigger={<Button>Add Job</Button>}
+                       modal
+                       contentStyle={contentStyle}>
+                           <AddJobForm/>
+                </Popup>
+                
+                <Wrapper>
+                    
+                    <Droppable id='dr1' style = {droppableStyle}>
+                        applied
+                        <Draggable id='item1' style={draggableStyle}>
+                            <Item>job1</Item>
+                        </Draggable>
+                        <Draggable id='item2' style={draggableStyle}>
+                            <Item>job2</Item>
+                        </Draggable>
+                    </Droppable>
+                    <Droppable id='dr2' style={droppableStyle}>
+                        interviewing
+
+                    </Droppable>
+                    <Droppable id='dr2' style={droppableStyle}>
+                        offer
+
+                    </Droppable>
+                    <Droppable id='dr2' style={droppableStyle}>
+                        reject
+
+                    </Droppable>
+                </Wrapper>
+            </div>
+        )
     }
-    fetchData();
-  }, []);
-
-  
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <DndComponent/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  )
 }
-
-export default App;
