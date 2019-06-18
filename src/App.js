@@ -42,8 +42,13 @@ const droppableStyle = {
     margin: '32px',
 };
 
+
+var cssHSL = "hsl(" + 360 * Math.random() + ',' +
+                 (25 + 70 * Math.random()) + '%,' + 
+                 (85 + 10 * Math.random()) + '%)';
+
 const draggableStyle = {
-    backgroundColor: 'white',
+    backgroundColor: cssHSL,
     margin: '8px',
 };
 
@@ -66,6 +71,15 @@ export default class DndComponent extends Component {
                         </Draggable>
                         <Draggable id='item2' style={draggableStyle}>
                             <Item>job2</Item>
+                        </Draggable>
+                        <Draggable id='item3' style={draggableStyle}>
+                            <Job/>
+                        </Draggable>
+                        <Draggable id='item4' style={draggableStyle}>
+                            <Job/>
+                        </Draggable>
+                        <Draggable id='item5' style={draggableStyle}>
+                            <Job/>
                         </Draggable>
                     </Droppable>
                     <Droppable id='dr2' style={droppableStyle}>

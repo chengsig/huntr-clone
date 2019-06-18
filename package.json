@@ -14,10 +14,12 @@
     "styled-components": "^4.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-fe": "react-scripts start",
+    "start-be": "json-server --watch db.json --delay 500 --port 5000"
   },
   "eslintConfig": {
     "extends": "react-app"

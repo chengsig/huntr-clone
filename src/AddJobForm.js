@@ -54,7 +54,7 @@ class AddJobForm extends Component{
         <StyledInput id="position" onChange={this.handleChange} value={this.state.position} name="position" /><br/>
         <label htmlFor="url">Url:</label><br/>
         <StyledInput id="url" onChange={this.handleChange} value={this.state.url} name="url" /><br/>
-        <label htmlFor="date">Date:</label><br/>
+        <label htmlFor="date">Date applied:</label><br/>
         <StyledInput id="date" onChange={this.handleChange} value={this.state.date} name="date" /><br/>
         <label htmlFor="description">Description:</label><br/>
         <StyledTextArea id="description" onChange={this.handleChange} value={this.state.description} name="description" /><br/>
