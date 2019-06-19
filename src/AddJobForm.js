@@ -22,9 +22,9 @@ const StyledTextArea = styled.textarea`
 const initialState = {
   company: '',
   position: '',
-  description: '',
   url: '',
   date: '',
+  notes: '',
 }
 
 class AddJobForm extends Component{
@@ -56,8 +56,8 @@ class AddJobForm extends Component{
         <StyledInput id="url" onChange={this.handleChange} value={this.state.url} name="url" /><br/>
         <label htmlFor="date">Date applied:</label><br/>
         <StyledInput id="date" onChange={this.handleChange} value={this.state.date} name="date" /><br/>
-        <label htmlFor="description">Description:</label><br/>
-        <StyledTextArea id="description" onChange={this.handleChange} value={this.state.description} name="description" /><br/>
+        <label htmlFor="notes">Notes:</label><br/>
+        <StyledTextArea id="notes" onChange={this.handleChange} value={this.state.notes} name="notes" /><br/>
         <button>Add</button>
       </StyledForm>
     )}

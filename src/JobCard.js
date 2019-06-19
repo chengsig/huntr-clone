@@ -16,7 +16,8 @@ const JobCard = styled.div`
 export default function Job() {
     return (
         <JobCard>
-            randomJob
+            company
+            position
         </JobCard>
     )
 }

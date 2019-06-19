@@ -1,5 +1,15 @@
 {
-    "jobs": [
-        {"id": 1, "company": "DoorDash", "position": "Software Engineer, Front-End", "method": "cold apply", "notes": ""}
+    "applied": [
+        {"id": 1, "company": "DoorDash", "position": "Software Engineer, Front-End", "url": "", "date": "6/1/2019", "notes": "cold apply"}
+    ],
+    "phone-screen": [
+    ],
+    "tech-challenge": [
+    ],
+    "on-site": [
+    ],
+    "offer": [
+    ],
+    "rejection": [
     ]
 }
