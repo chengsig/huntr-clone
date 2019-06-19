@@ -11,12 +11,12 @@ const Wrapper = styled.div`
     justify-content: center;
 `;
 
-const Item = styled.div`
-    padding: 8px;
-    color: #555;
-    backgroundColor: white;
-    border-radius: 3px;
-`;
+// const Item = styled.div`
+//     padding: 8px;
+//     color: #555;
+//     backgroundColor: white;
+//     border-radius: 3px;
+// `;
 
 const droppableStyle = {
     backgroundColor: '#555',
@@ -41,7 +41,7 @@ export default class Board extends Component {
         
         return (
             <Wrapper>
-                <Droppable id='dr1' style = {droppableStyle}>
+                <Droppable id='applied' style = {droppableStyle}>
                     applied
                     {this.props.applied.map(j => (
                         <Draggable id={j.id} style={draggableStyle}>
@@ -55,16 +55,23 @@ export default class Board extends Component {
                         </Draggable>
                     ))}
                 </Droppable>
-                <Droppable id='dr2' style={droppableStyle}>
-                    interviewing
+                <Droppable id='phoneScreen' style={droppableStyle}>
+                    phones screen
                 </Droppable>
-                <Droppable id='dr2' style={droppableStyle}>
+                <Droppable id='techChallenge' style={droppableStyle}>
+                    tech challenge
+                </Droppable>
+                <Droppable id='onSite' style={droppableStyle}>
+                    on-site
+                </Droppable>
+                <Droppable id='offer' style={droppableStyle}>
                     offer
                 </Droppable>
-                <Droppable id='dr2' style={droppableStyle}>
+                <Droppable id='rejection' style={droppableStyle}>
                     rejection
                 </Droppable>
             </Wrapper>
         )
     }
 }
+

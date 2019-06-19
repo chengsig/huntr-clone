@@ -55,9 +55,7 @@ export default class App extends Component {
   // call API to add a new job to tbe board
   async addJob({ company, position, url, date, notes }) {
     //think about a better id other than uuid
-    let id = uuid()
-    let now = new Date();
-    if (date.length === 0) date = now;
+    let id = uuid();
     let objData = { id, company, position, url, date, notes };
     await addJob(objData);
     this.setState({
