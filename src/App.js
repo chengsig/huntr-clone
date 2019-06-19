@@ -66,15 +66,21 @@ export default class App extends Component {
   }
 
     render () {
-        //const {applied, phoneScreen, techChallenge, onSite, offer, rejection, isLoading} = this.state;
-        let html = this.state.isLoading ? <div>...loading</div> : (
+        const {applied, phoneScreen, techChallenge, onSite, offer, rejection, isLoading} = this.state;
+        let html = isLoading ? <div>...loading</div> : (
           <div>
             <Popup trigger={<Button>Add Job</Button>}
                   modal
                   contentStyle={contentStyle}>
-              <AddJobForm triggerAddJob={this.addJob}/>
+              <AddJobForm triggerAddJob={this.addJob} isAdding={true} />
             </Popup>
-            <Board/>
+            <Board applied={applied}
+                   phoneScreen={phoneScreen}
+                   techChallenge={techChallenge}
+                   onSite={onSite}
+                   offer={offer}
+                   rejection={rejection}
+            />
           </div>
         )
 

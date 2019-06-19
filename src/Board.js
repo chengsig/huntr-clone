@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Job from './JobCard';
+import JobCard from './JobCard';
 import Draggable from './Dnd/Draggable';
 import Droppable from './Dnd/Droppable';
 
@@ -21,9 +21,9 @@ const Item = styled.div`
 const droppableStyle = {
     backgroundColor: '#555',
     color: 'white',
-    width: '250px',
+    width: '350px',
     height: '400px',
-    margin: '32px',
+    margin: '10px',
 };
 
 var cssHSL = "hsl(" + 360 * Math.random() + ',' +
@@ -36,26 +36,24 @@ const draggableStyle = {
 };
 
 export default class Board extends Component {
+    
     render() {
+        
         return (
             <Wrapper>
                 <Droppable id='dr1' style = {droppableStyle}>
                     applied
-                  <Draggable id='item1' style={draggableStyle}>
-                    <Job/>
-                  </Draggable>
-                <Draggable id='item2' style={draggableStyle}>
-                    <Item>job2</Item>
-                </Draggable>
-                <Draggable id='item3' style={draggableStyle}>
-                  <Job/>
-                </Draggable>
-                <Draggable id='item4' style={draggableStyle}>
-                  <Job/>
-                </Draggable>
-                <Draggable id='item5' style={draggableStyle}>
-                  <Job/>
-                </Draggable>
+                    {this.props.applied.map(j => (
+                        <Draggable id={j.id} style={draggableStyle}>
+                            <JobCard id={j.id}
+                                     company={j.company}
+                                     position={j.position}
+                                     url={j.url}
+                                     date={j.date}
+                                     notes={j.notes}
+                            />
+                        </Draggable>
+                    ))}
                 </Droppable>
                 <Droppable id='dr2' style={droppableStyle}>
                     interviewing

@@ -1,6 +1,7 @@
 {
     "applied": [
-        {"id": 1, "company": "DoorDash", "position": "Software Engineer, Front-End", "url": "", "date": "6/1/2019", "notes": "cold apply"}
+        {"id": 1, "company": "DoorDash", "position": "Software Engineer, Front-End", "url": "https://www.linkedin.com/jobs/view/1215662335/", "date": "6/1/2019", "notes": "cold apply"},
+        {"id": 2, "company": "Uber", "position": "Software Engineer", "url": "", "date": "6/1/2019", "notes": "cold apply"}
     ],
     "phone-screen": [
     ],
