@@ -53,13 +53,12 @@ export default class App extends Component {
   }
 
   // call API to add a new job to tbe board
-  async addJob({ company, position, url, date, notes }) {
-    //think about a better id other than uuid
+  async addJob(type, { company, position, url, date, notes }) {
     let id = uuid();
     let objData = { id, company, position, url, date, notes };
-    await addJob(objData);
+    await addJob(type, objData);
     this.setState({
-      applied: [...this.state.applied, objData]
+      [type]: [...this.state.applied, objData]
     });
   }
 

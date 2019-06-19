@@ -41,7 +41,8 @@ class AddJobForm extends Component{
 
   handleSubmit(evt){
     evt.preventDefault();
-    this.props.triggerAddJob(this.state);
+    let type = "applied";
+    this.props.triggerAddJob(type, this.state);
     this.setState(initialState);
   }
 

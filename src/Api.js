@@ -14,6 +14,12 @@ export async function fetchItems(type) {
 
 /** Add a new job */
 
-export async function addJob(data) {
-    await axios.post(`${BASE_API_URL}/applied`, data);
+export async function addJob(type, data) {
+  await axios.post(`${BASE_API_URL}/${type}`, data);
+}
+
+/** Delete a job */
+
+export async function deleteJob(type, id) {
+  await axios.delete(`${BASE_API_URL}/${type}/${id}`);
 }
