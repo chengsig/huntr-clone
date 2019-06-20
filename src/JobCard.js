@@ -27,7 +27,6 @@ export default function JobCard(props) {
         <Popup trigger={
             <Job id={props.id}>
                 {props.company} <br/>
-                {props.position}
             </Job>
         }
                   modal
@@ -38,6 +37,9 @@ export default function JobCard(props) {
                         url={props.url}
                         date={props.date}
                         notes={props.notes}
+                        deleteJob={props.deleteJob}
+                        jobId={props.id}
+                        type={props.type}
                         />
         </Popup> 
     )

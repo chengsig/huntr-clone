@@ -51,6 +51,8 @@ export default class Board extends Component {
                                      url={j.url}
                                      date={j.date}
                                      notes={j.notes}
+                                     deleteJob={this.props.deleteJob}
+                                     type='applied'
                             />
                         </Draggable>
                     ))}
@@ -73,6 +75,8 @@ export default class Board extends Component {
                                      url={j.url}
                                      date={j.date}
                                      notes={j.notes}
+                                     deleteJob={this.props.deleteJob}
+                                     type='phoneScreen'
                             />
                         </Draggable>
                     ))}
@@ -95,6 +99,8 @@ export default class Board extends Component {
                                      url={j.url}
                                      date={j.date}
                                      notes={j.notes}
+                                     deleteJob={this.props.deleteJob}
+                                     type='techChallenge'
                             />
                         </Draggable>
                     ))}
@@ -117,6 +123,8 @@ export default class Board extends Component {
                                      url={j.url}
                                      date={j.date}
                                      notes={j.notes}
+                                     deleteJob={this.props.deleteJob}
+                                     type='onSite'
                             />
                         </Draggable>
                     ))}
@@ -139,6 +147,8 @@ export default class Board extends Component {
                                      url={j.url}
                                      date={j.date}
                                      notes={j.notes}
+                                     deleteJob={this.props.deleteJob}
+                                     type='offer'
                             />
                         </Draggable>
                     ))}
@@ -161,6 +171,8 @@ export default class Board extends Component {
                                      url={j.url}
                                      date={j.date}
                                      notes={j.notes}
+                                     deleteJob={this.props.deleteJob}
+                                     type='rejection'
                             />
                         </Draggable>
                     ))}

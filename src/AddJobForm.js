@@ -33,31 +33,39 @@ class AddJobForm extends Component{
     this.state = initialState;
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
-  handleChange(evt){
-    this.setState({[evt.target.name]: evt.target.value});
+  handleChange(e){
+    this.setState({[e.target.name]: e.target.value});
   }
 
-  handleSubmit(evt){
-    evt.preventDefault();
+  handleSubmit(e){
+    e.preventDefault();
     let type = "applied";
     this.props.triggerAddJob(type, this.state, true);
     this.setState(initialState);
   }
 
+  handleDelete(e) {
+    
+    e.preventDefault();
+    this.props.deleteJob(this.props.type, this.props.jobId, true);
+  }
+
   render(){
       let button = this.props.isAdding ? "Add" : "Save";
+      let deleteBtn = this.props.isAdding ? "" : <button id="deletebutton" onClick={this.handleDelete}>delete</button> ;
       let cPlaceholder = this.props.isAdding ? "" : this.props.company;
       let pPlaceholder = this.props.isAdding ? "" : this.props.position;
       let uPlaceholder = this.props.isAdding ? "" : this.props.url;
       let urlLink = this.props.isAdding ? "Url:" : (
-            <a href={this.props.url} target="_blank" >Url:</a>);
+            <a href={this.props.url} target="_blank" rel="noopener noreferrer" >Url:</a>);
       let dPlaceholder = this.props.isAdding ? new Date() : this.props.date;
       let nPlaceholder = this.props.isAdding ? "" : this.props.notes;
 
     return(
-        <StyledForm onSubmit={this.handleSubmit}>
+        <StyledForm id="styledForm">
             <label htmlFor="company">Company:</label><br/>
             <StyledInput id="company" 
                          onChange={this.handleChange} 
@@ -88,7 +96,9 @@ class AddJobForm extends Component{
                             value={this.state.notes} 
                             name="notes"
                             placeholder={nPlaceholder} /><br/>
-            <button>{button}</button>
+            <button id="addOrSave"
+                    onClick={this.handleSubmit}>{button}</button>
+            {deleteBtn}
         </StyledForm>
     )}
 }
