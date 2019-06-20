@@ -23,10 +23,9 @@ const contentStyle = {
 };
 
 export default function JobCard(props) {
-    
     return(
         <Popup trigger={
-            <Job>
+            <Job id={props.id}>
                 {props.company} <br/>
                 {props.position}
             </Job>

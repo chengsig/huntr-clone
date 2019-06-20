@@ -17,9 +17,18 @@
       "notes": "cold apply"
     }
   ],
-  "phone-screen": [],
-  "tech-challenge": [],
-  "on-site": [],
+  "phoneScreen": [
+    {
+      "id": "680cc6ef-d0ba-4ac4-877d-c46fb8ba52b4",
+      "company": "Uber",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "6/1/2019",
+      "notes": "cold apply"
+    }
+  ],
+  "techChallenge": [],
+  "onSite": [],
   "offer": [],
   "rejection": []
 }

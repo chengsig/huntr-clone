@@ -41,10 +41,17 @@ export default class Board extends Component {
         
         return (
             <Wrapper>
-                <Droppable id='applied' style = {droppableStyle}>
+                <Droppable id='applied' 
+                           style={droppableStyle}
+                           addJob={this.props.addJob} 
+                           >
                     applied
                     {this.props.applied.map(j => (
-                        <Draggable id={j.id} style={draggableStyle}>
+                        <Draggable id={j.id} 
+                                   jobData={j}
+                                   style={draggableStyle}
+                                   parentId="applied"
+                                   >
                             <JobCard id={j.id}
                                      company={j.company}
                                      position={j.position}
@@ -55,19 +62,34 @@ export default class Board extends Component {
                         </Draggable>
                     ))}
                 </Droppable>
-                <Droppable id='phoneScreen' style={droppableStyle}>
+                <Droppable id='phoneScreen' 
+                           style={droppableStyle}
+                           addJob={this.props.addJob} 
+                           >
                     phones screen
                 </Droppable>
-                <Droppable id='techChallenge' style={droppableStyle}>
+                <Droppable id='techChallenge' 
+                           style={droppableStyle}
+                           addJob={this.props.addJob} 
+                           >
                     tech challenge
                 </Droppable>
-                <Droppable id='onSite' style={droppableStyle}>
+                <Droppable id='onSite' 
+                           style={droppableStyle}
+                           addJob={this.props.addJob} 
+                           >
                     on-site
                 </Droppable>
-                <Droppable id='offer' style={droppableStyle}>
+                <Droppable id='offer' 
+                           style={droppableStyle}
+                           addJob={this.props.addJob} 
+                           >
                     offer
                 </Droppable>
-                <Droppable id='rejection' style={droppableStyle}>
+                <Droppable id='rejection' 
+                           style={droppableStyle}
+                           addJob={this.props.addJob} 
+                           >
                     rejection
                 </Droppable>
             </Wrapper>

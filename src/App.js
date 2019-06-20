@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Popup from "reactjs-popup";
 import AddJobForm from './AddJobForm';
 import Board from './Board';
-import { fetchItems, addJob } from "./Api";
+import { fetchItems, addJob, deleteJob } from "./Api";
 import uuid from 'uuid/v4';
 
 const Button = styled.button`
@@ -33,14 +33,15 @@ export default class App extends Component {
       rejection: [],
     };
     this.addJob = this.addJob.bind(this);
+    this.deleteJob = this.deleteJob.bind(this);
   }
 
   // load jobs from backend
   async componentDidMount() {
     let applied = await fetchItems("applied");
-    let phoneScreen = await fetchItems("phone-screen");
-    let techChallenge = await fetchItems("tech-challenge");
-    let onSite = await fetchItems("on-site");
+    let phoneScreen = await fetchItems("phoneScreen");
+    let techChallenge = await fetchItems("techChallenge");
+    let onSite = await fetchItems("onSite");
     let offer = await fetchItems("offer");
     let rejection = await fetchItems("rejection");
     this.setState({ applied, 
@@ -62,6 +63,14 @@ export default class App extends Component {
     });
   }
 
+  // delete a job from API's corresponding column
+  async deleteJob(type, id) {
+    await deleteJob(type, id);
+    this.setState(st => ({
+      type: st.type.filter(job => job.id !== id)
+    }));
+  }
+
     render () {
         const {applied, phoneScreen, techChallenge, onSite, offer, rejection, isLoading} = this.state;
         let html = isLoading ? <div>...loading</div> : (
@@ -71,12 +80,15 @@ export default class App extends Component {
                   contentStyle={contentStyle}>
               <AddJobForm triggerAddJob={this.addJob} isAdding={true} />
             </Popup>
-            <Board applied={applied}
+            <Board id="jobBoard"
+                   applied={applied}
                    phoneScreen={phoneScreen}
                    techChallenge={techChallenge}
                    onSite={onSite}
                    offer={offer}
                    rejection={rejection}
+                   addJob={this.addJob}
+                   deleteJob={this.deleteJob}
             />
           </div>
         )

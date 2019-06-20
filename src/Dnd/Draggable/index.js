@@ -3,8 +3,13 @@ import PropTypes from 'prop-types';
 
 export default class Draggable extends Component {
 
-    drag = (e) => {
-        e.dataTransfer.setData('transfer', e.target.id);
+    drag = (e, jobData, parentId) => {
+        
+        let jData = JSON.stringify({jobData})
+        console.log('what does jobData look like', jData)
+        console.log('trying to parse', JSON.parse(jData).jobData.id)
+        console.log('can I get where I start', parentId)
+        e.dataTransfer.setData('transfer', jData);
     }
 
     noAllowDrop = (e) => {
@@ -15,7 +20,7 @@ export default class Draggable extends Component {
         return (
             <div id={this.props.id} 
                  draggable="true" 
-                 onDragStart={this.drag} 
+                 onDragStart={e => this.drag(e, this.props.jobData, this.props.parentId)} 
                  onDragOver={this.noAllowDrop} 
                  style={this.props.style}>
                 {this.props.children}

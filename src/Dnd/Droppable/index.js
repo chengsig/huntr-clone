@@ -6,7 +6,13 @@ export default class Droppbale extends Component {
     drop = (e) => {
         e.preventDefault();
         const data = e.dataTransfer.getData('transfer');
-        e.target.appendChild(document.getElementById(data));
+        let jobData = JSON.parse(data).jobData;
+        console.log('can I get id this way', JSON.parse(data).jobData) //data object
+        console.log('and can get parent', e.target.id) //"phoneScreen"
+        e.target.appendChild(document.getElementById(jobData.id));
+        delete jobData.id;
+        this.props.addJob(e.target.id, jobData);
+
     }
 
     allowDrop = (e) => {
@@ -15,7 +21,10 @@ export default class Droppbale extends Component {
 
     render () {
         return (
-            <div id={this.props.id} onDrop={this.drop} onDragOver={this.allowDrop} style={this.props.style}>
+            <div id={this.props.id} 
+                 onDrop={this.drop} 
+                 onDragOver={this.allowDrop} 
+                 style={this.props.style}>
                 {this.props.children}
             </div>
         )
