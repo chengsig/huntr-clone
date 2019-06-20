@@ -7,29 +7,37 @@
       "url": "https://www.linkedin.com/jobs/view/1215662335/",
       "date": "6/1/2019",
       "notes": "cold apply"
+    },
+    {
+      "id": "a3b90816-5fba-4a54-8672-d749a107f716",
+      "company": "test",
+      "position": "test",
+      "url": "test",
+      "date": "",
+      "notes": "test"
+    },
+    {
+      "id": "0e77bc88-6b49-4ac9-8a7d-253b46f26cb8",
+      "company": "Flexport",
+      "position": "Software Engineer",
+      "url": "meg ",
+      "date": "",
+      "notes": "both\n"
     }
   ],
   "phoneScreen": [
     {
-      "id": "7cb65951-9753-4f64-9456-f70fcd9d055f",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    },
-    {
-      "id": "5b6196ff-8c65-474a-87f3-88430912da41",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
+      "id": "c6a21d9e-7976-4ce5-b8ff-192f2bcffc9b",
+      "company": "mamamama",
+      "position": "lalalala",
+      "url": "hahahaha",
+      "date": "papapapa",
+      "notes": "lalalal"
     }
   ],
   "techChallenge": [
     {
-      "id": "c8b33d8e-0494-4240-8a0b-44154e4da834",
+      "id": "a57288f3-4078-4d78-b68b-2d4b6657cbc7",
       "company": "Uber",
       "position": "Software Engineer",
       "url": "https://www.linkedin.com/jobs/view/1215662335/",
@@ -37,16 +45,7 @@
       "notes": "cold apply"
     }
   ],
-  "onSite": [
-    {
-      "id": "8a3d1bd8-d761-4a15-b8ed-759d5c2eec79",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    }
-  ],
+  "onSite": [],
   "offer": [],
   "rejection": [
     {
