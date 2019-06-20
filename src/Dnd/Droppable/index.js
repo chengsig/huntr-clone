@@ -7,12 +7,13 @@ export default class Droppbale extends Component {
         e.preventDefault();
         const data = e.dataTransfer.getData('transfer');
         let jobData = JSON.parse(data).jobData;
-        console.log('can I get id this way', JSON.parse(data).jobData) //data object
-        console.log('and can get parent', e.target.id) //"phoneScreen"
-        e.target.appendChild(document.getElementById(jobData.id));
+        let jobId = jobData.id;
+        let oldParent = jobData.parentId;
+        e.target.appendChild(document.getElementById(jobId));
         delete jobData.id;
+        delete jobData.parentId;
         this.props.addJob(e.target.id, jobData);
-
+        this.props.deleteJob(oldParent, jobId);
     }
 
     allowDrop = (e) => {

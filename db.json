@@ -7,28 +7,38 @@
       "url": "https://www.linkedin.com/jobs/view/1215662335/",
       "date": "6/1/2019",
       "notes": "cold apply"
-    },
-    {
-      "id": "two",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "",
-      "date": "6/1/2019",
-      "notes": "cold apply"
     }
   ],
   "phoneScreen": [
     {
-      "id": "680cc6ef-d0ba-4ac4-877d-c46fb8ba52b4",
+      "id": "ff67dc5b-3f94-4748-9403-38bb369adeb2",
       "company": "Uber",
       "position": "Software Engineer",
-      "url": "",
+      "url": "https://www.linkedin.com/jobs/view/1215662335/",
       "date": "6/1/2019",
       "notes": "cold apply"
     }
   ],
-  "techChallenge": [],
+  "techChallenge": [
+    {
+      "id": "16fdd95a-99fb-4827-b1c6-2a22230ef00f",
+      "company": "Uber",
+      "position": "Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/1215662335/",
+      "date": "6/1/2019",
+      "notes": "cold apply"
+    }
+  ],
   "onSite": [],
   "offer": [],
-  "rejection": []
+  "rejection": [
+    {
+      "id": "9aee2724-a146-43bb-bb10-01f29f0b945a",
+      "company": "ArgoAI",
+      "position": "So",
+      "url": "",
+      "date": "",
+      "notes": ""
+    }
+  ]
 }

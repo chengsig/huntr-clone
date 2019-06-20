@@ -66,9 +66,9 @@ export default class App extends Component {
   // delete a job from API's corresponding column
   async deleteJob(type, id) {
     await deleteJob(type, id);
-    this.setState(st => ({
-      type: st.type.filter(job => job.id !== id)
-    }));
+    this.setState({
+      [type]: [type].filter(job => job.id !== id)
+    });
   }
 
     render () {

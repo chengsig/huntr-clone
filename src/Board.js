@@ -11,13 +11,6 @@ const Wrapper = styled.div`
     justify-content: center;
 `;
 
-// const Item = styled.div`
-//     padding: 8px;
-//     color: #555;
-//     backgroundColor: white;
-//     border-radius: 3px;
-// `;
-
 const droppableStyle = {
     backgroundColor: '#555',
     color: 'white',
@@ -38,12 +31,12 @@ const draggableStyle = {
 export default class Board extends Component {
     
     render() {
-        
         return (
             <Wrapper>
                 <Droppable id='applied' 
                            style={droppableStyle}
                            addJob={this.props.addJob} 
+                           deleteJob={this.props.deleteJob}
                            >
                     applied
                     {this.props.applied.map(j => (
@@ -64,33 +57,113 @@ export default class Board extends Component {
                 </Droppable>
                 <Droppable id='phoneScreen' 
                            style={droppableStyle}
-                           addJob={this.props.addJob} 
+                           addJob={this.props.addJob}
+                           deleteJob={this.props.deleteJob} 
                            >
                     phones screen
+                    {this.props.phoneScreen.map(j => (
+                        <Draggable id={j.id} 
+                                   jobData={j}
+                                   style={draggableStyle}
+                                   parentId="phoneScreen"
+                                   >
+                            <JobCard id={j.id}
+                                     company={j.company}
+                                     position={j.position}
+                                     url={j.url}
+                                     date={j.date}
+                                     notes={j.notes}
+                            />
+                        </Draggable>
+                    ))}
                 </Droppable>
                 <Droppable id='techChallenge' 
                            style={droppableStyle}
-                           addJob={this.props.addJob} 
+                           addJob={this.props.addJob}
+                           deleteJob={this.props.deleteJob} 
                            >
                     tech challenge
+                    {this.props.techChallenge.map(j => (
+                        <Draggable id={j.id} 
+                                   jobData={j}
+                                   style={draggableStyle}
+                                   parentId="techChallenge"
+                                   >
+                            <JobCard id={j.id}
+                                     company={j.company}
+                                     position={j.position}
+                                     url={j.url}
+                                     date={j.date}
+                                     notes={j.notes}
+                            />
+                        </Draggable>
+                    ))}
                 </Droppable>
                 <Droppable id='onSite' 
                            style={droppableStyle}
-                           addJob={this.props.addJob} 
+                           addJob={this.props.addJob}
+                           deleteJob={this.props.deleteJob} 
                            >
                     on-site
+                    {this.props.onSite.map(j => (
+                        <Draggable id={j.id} 
+                                   jobData={j}
+                                   style={draggableStyle}
+                                   parentId="onSite"
+                                   >
+                            <JobCard id={j.id}
+                                     company={j.company}
+                                     position={j.position}
+                                     url={j.url}
+                                     date={j.date}
+                                     notes={j.notes}
+                            />
+                        </Draggable>
+                    ))}
                 </Droppable>
                 <Droppable id='offer' 
                            style={droppableStyle}
-                           addJob={this.props.addJob} 
+                           addJob={this.props.addJob}
+                           deleteJob={this.props.deleteJob} 
                            >
                     offer
+                    {this.props.offer.map(j => (
+                        <Draggable id={j.id} 
+                                   jobData={j}
+                                   style={draggableStyle}
+                                   parentId="offer"
+                                   >
+                            <JobCard id={j.id}
+                                     company={j.company}
+                                     position={j.position}
+                                     url={j.url}
+                                     date={j.date}
+                                     notes={j.notes}
+                            />
+                        </Draggable>
+                    ))}
                 </Droppable>
                 <Droppable id='rejection' 
                            style={droppableStyle}
                            addJob={this.props.addJob} 
+                           deleteJob={this.props.deleteJob}
                            >
                     rejection
+                    {this.props.rejection.map(j => (
+                        <Draggable id={j.id} 
+                                   jobData={j}
+                                   style={draggableStyle}
+                                   parentId="rejection"
+                                   >
+                            <JobCard id={j.id}
+                                     company={j.company}
+                                     position={j.position}
+                                     url={j.url}
+                                     date={j.date}
+                                     notes={j.notes}
+                            />
+                        </Draggable>
+                    ))}
                 </Droppable>
             </Wrapper>
         )

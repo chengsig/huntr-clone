@@ -4,11 +4,8 @@ import PropTypes from 'prop-types';
 export default class Draggable extends Component {
 
     drag = (e, jobData, parentId) => {
-        
+        jobData['parentId'] = parentId;
         let jData = JSON.stringify({jobData})
-        console.log('what does jobData look like', jData)
-        console.log('trying to parse', JSON.parse(jData).jobData.id)
-        console.log('can I get where I start', parentId)
         e.dataTransfer.setData('transfer', jData);
     }
 
