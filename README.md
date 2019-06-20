@@ -22,7 +22,6 @@ You will also see any lint errors in the console.
 
 ## To dos:
 
-- add delete button for each job card
 - set up relational database for backend
 - update edit function for form
 - set up login for different users authentication and authorization
