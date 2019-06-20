@@ -58,17 +58,17 @@ export default class App extends Component {
     let id = uuid();
     let objData = { id, company, position, url, date, notes };
     await addJob(type, objData);
-    this.setState({
-      [type]: [...this.state.applied, objData]
-    });
+    // this.setState({
+    //   [type]: [...this.state.applied, objData]
+    // });
   }
 
   // delete a job from API's corresponding column
   async deleteJob(type, id) {
+    // this.setState({
+    //   [type]: [type].filter(job => job.id !== id)
+    // });
     await deleteJob(type, id);
-    this.setState({
-      [type]: [type].filter(job => job.id !== id)
-    });
   }
 
     render () {
