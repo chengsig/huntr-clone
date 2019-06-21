@@ -19,23 +19,7 @@
   ],
   "phoneScreen": [
     {
-      "id": "0688ab80-3b02-482c-8cc7-59d6f481ad9f",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    },
-    {
-      "id": "f39a77b1-1b60-49d2-aa43-c3f8c76bd5ec",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    },
-    {
-      "id": "a342929b-bcc0-4ca0-8732-2e33ae5a8a16",
+      "id": "bc2252b4-f5d9-493e-aeef-3709ee40239e",
       "company": "Uber",
       "position": "Software Engineer",
       "url": "https://www.linkedin.com/jobs/view/1215662335/",
@@ -43,50 +27,8 @@
       "notes": "cold apply"
     }
   ],
-  "techChallenge": [
-    {
-      "id": "58e1023d-2a12-40c3-8f1e-f930765d12f9",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    },
-    {
-      "id": "b7737682-33c3-4c31-814f-fe99ad6f554a",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    },
-    {
-      "id": "2444fee9-f726-40bb-b934-47a27ef75cf5",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    },
-    {
-      "id": "08637d7c-0119-457b-8d65-40ea566dec25",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    }
-  ],
-  "onSite": [
-    {
-      "id": "9bbf20c4-512e-4740-825b-64f14ec83b5f",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    }
-  ],
+  "techChallenge": [],
+  "onSite": [],
   "offer": [],
   "rejection": [
     {
