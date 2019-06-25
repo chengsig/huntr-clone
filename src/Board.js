@@ -41,7 +41,7 @@ export default class Board extends Component {
                     >
                         {key}: {this.props.boardProps[key].length}
                         {this.props.boardProps[key].map(j => (
-                            <Draggable id={j.id + key}
+                            <Draggable id={j.id}
                                 jobData={j}
                                 style={draggableStyle}
                                 parentId={key}
