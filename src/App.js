@@ -77,6 +77,7 @@ export default class App extends Component {
 
     render () {
         const {applied, phoneScreen, techChallenge, onSite, offer, rejection, isLoading} = this.state;
+        const boardProps = {applied, phoneScreen, techChallenge, onSite, offer, rejection};
         let html = isLoading ? <div>...loading</div> : (
           <div>
             <Popup trigger={<Button>Add Job</Button>}
@@ -85,12 +86,7 @@ export default class App extends Component {
               <AddJobForm triggerAddJob={this.addJob} isAdding={true} />
             </Popup>
             <Board id="jobBoard"
-                   applied={applied}
-                   phoneScreen={phoneScreen}
-                   techChallenge={techChallenge}
-                   onSite={onSite}
-                   offer={offer}
-                   rejection={rejection}
+                   boardProps={boardProps}
                    addJob={this.addJob}
                    deleteJob={this.deleteJob}
             />
