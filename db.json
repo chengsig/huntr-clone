@@ -15,19 +15,107 @@
       "url": "meg ",
       "date": "",
       "notes": "both\n"
-    }
-  ],
-  "phoneScreen": [
+    },
     {
-      "id": "bc2252b4-f5d9-493e-aeef-3709ee40239e",
+      "id": "093ddc61-a6c2-4e45-a4a3-1f1d5a8cb0f4",
       "company": "Uber",
       "position": "Software Engineer",
       "url": "https://www.linkedin.com/jobs/view/1215662335/",
       "date": "6/1/2019",
       "notes": "cold apply"
+    },
+    {
+      "id": "9ad79e1d-4d1a-4253-a2b1-9420175aa124",
+      "company": "Nielsen",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "Jun 12, 2019",
+      "notes": "cold apply"
+    },
+    {
+      "id": "c80663fd-426a-410b-89e9-c37d539b7357",
+      "company": "Groupon",
+      "position": "Software Development Engineer, Back End",
+      "url": "",
+      "date": "Jun 10, 2019",
+      "notes": "cold apply"
+    },
+    {
+      "id": "ab5b4752-48cf-41f3-8518-ad05f15931f1",
+      "company": "Twist Bioscience",
+      "position": "Full-Stack Software Engineer",
+      "url": "",
+      "date": "Jun 10, 2019",
+      "notes": ""
+    },
+    {
+      "id": "a4703bea-4066-4f99-a66e-c9ba6e7a42f2",
+      "company": "The League",
+      "position": "Engineering Internship",
+      "url": "",
+      "date": "Jun 5, 2019",
+      "notes": ""
+    },
+    {
+      "id": "f247b65b-6d98-4a14-beb8-a44003189a33",
+      "company": "Wish",
+      "position": "Software Engineering Intern - Fall 2019",
+      "url": "",
+      "date": "Jun 5, 2019",
+      "notes": ""
+    },
+    {
+      "id": "abbd0e41-f776-47ce-a407-016ff6944eaa",
+      "company": "Fivetran",
+      "position": "Software Engineer Internship",
+      "url": "",
+      "date": "",
+      "notes": "Tech Equity Pipeline Program"
+    },
+    {
+      "id": "e90933de-6ea0-4069-a847-33d52bf7890e",
+      "company": "Apple",
+      "position": "Frontend Engineer 200039548",
+      "url": "",
+      "date": "Jun 3, 2019",
+      "notes": ""
+    },
+    {
+      "id": "0531f812-dc00-4ffa-b70a-43fedd6143df",
+      "company": "BlackRock",
+      "position": "Associate, Software Developer (Python) - San Francisco",
+      "url": "https://blackrock.wd1.myworkdayjobs.com/en-US/BlackRock_Professional/job/San-Francisco-CA/Associate--Software-Developer--Python----San-Francisco_R191871",
+      "date": "",
+      "notes": "used old referral..."
+    },
+    {
+      "id": "06964937-e422-4cc4-bdfc-651a4c44e482",
+      "company": "Coinbase",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": "Internapalooza then emailed university-recruiting@coinbase.com\n4 open roles for software, 2 backend, 1 payment, 1 infrastructure"
+    },
+    {
+      "id": "52a2761c-be3f-4817-8b41-461e9a2115bd",
+      "company": "Palantir",
+      "position": "Software Engineer and Full Stack Software Engineer, Internal",
+      "url": "https://jobs.lever.co/palantir/12db3e3a-33ca-4896-b4a5-c853eec3d270/apply",
+      "date": "",
+      "notes": "Proudest achievement:\nI recently built my own job board, cloning huntr.co. The original reason was simple, I ran out of free job space and decided to use technologies I know to build a copy. The process ended up involving following several tutorials, reading new technology documentation, and hours of debugging, but the end result is rewarding. Now I track my job application process on my own huntr!\n\nYou can check out a simple version with fake backend at: https://vigilant-banach-5a1a7c.netlify.com/\n\n\nwhy:\nBecause I love working with data and I enjoy problem solving. I have a diverse background with 4+ experience in the financial services sector, genetics research, pharmaceutical company operations, hollywood internship experience, and full-stack web development training. Wherever I go, I always excel at problem solving. I am a fast learner and I believe I will be a good fit!"
     }
   ],
-  "techChallenge": [],
+  "phoneScreen": [],
+  "techChallenge": [
+    {
+      "id": "84610950-d210-42f7-abf5-cd7f1dfdc95c",
+      "company": "Spotify TTP",
+      "position": "Tech Talent Pipline New York",
+      "url": "",
+      "date": "",
+      "notes": ""
+    }
+  ],
   "onSite": [],
   "offer": [],
   "rejection": [
@@ -35,6 +123,86 @@
       "id": "9aee2724-a146-43bb-bb10-01f29f0b945a",
       "company": "ArgoAI",
       "position": "So",
+      "url": "",
+      "date": "",
+      "notes": ""
+    },
+    {
+      "id": "8e91a262-7519-4eb3-b8ed-f5468811d2d3",
+      "company": "Truly",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "79733805-da6a-42c4-89af-0831a25a919c",
+      "company": "Opendoor",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "b2584c26-74b2-4c20-a13a-d20cf698e7c8",
+      "company": "Samsara",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": "cold apply reject"
+    },
+    {
+      "id": "0575ae57-f1f0-45df-bc8c-397f28a58adb",
+      "company": "Fictiv",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": "susan reject"
+    },
+    {
+      "id": "d05d4c2e-41d9-4d8b-ac33-fe8dca57eba2",
+      "company": "Zillow",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": ""
+    },
+    {
+      "id": "b560ba8b-2cc4-4d2d-a5c8-ae74fe7de87e",
+      "company": "OpenAI",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": ""
+    },
+    {
+      "id": "dd6af131-f33b-41e5-8aec-c64a0b328623",
+      "company": "Keyo",
+      "position": "Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": ""
+    },
+    {
+      "id": "d5736050-72ab-4f10-ac92-3b6e0df12377",
+      "company": "Big Switch Networks",
+      "position": "Front-End Software Engineer",
+      "url": "",
+      "date": "",
+      "notes": ""
+    },
+    {
+      "id": "efa0b61d-0a28-4ccc-ab20-730556f66a61",
+      "company": "Pixar",
+      "position": "Platform Software Engineer ",
+      "url": "",
+      "date": "",
+      "notes": ""
+    },
+    {
+      "id": "642fc007-1272-482a-a894-e7d1b7dfd304",
+      "company": "Square",
+      "position": "Software Engineer, Marketing Automation",
       "url": "",
       "date": "",
       "notes": ""
