@@ -31,6 +31,7 @@ export default class App extends Component {
       onSite: [],
       offer: [],
       rejection: [],
+      itsBeenWayTooLong: [],
     };
     this.addJob = this.addJob.bind(this);
     this.deleteJob = this.deleteJob.bind(this);
@@ -44,12 +45,14 @@ export default class App extends Component {
     let onSite = await fetchItems("onSite");
     let offer = await fetchItems("offer");
     let rejection = await fetchItems("rejection");
+    let itsBeenWayTooLong = await fetchItems("itsBeenWayTooLong");
     this.setState({ applied, 
                     phoneScreen,
                     techChallenge,
                     onSite,
                     offer,
                     rejection,
+                    itsBeenWayTooLong,
                     isLoading: false });
   }
 
@@ -76,8 +79,8 @@ export default class App extends Component {
   }
 
     render () {
-        const {applied, phoneScreen, techChallenge, onSite, offer, rejection, isLoading} = this.state;
-        const boardProps = {applied, phoneScreen, techChallenge, onSite, offer, rejection};
+        const {applied, phoneScreen, techChallenge, onSite, offer, rejection, itsBeenWayTooLong, isLoading, } = this.state;
+        const boardProps = {applied, phoneScreen, techChallenge, onSite, offer, rejection, itsBeenWayTooLong};
         let html = isLoading ? <div>...loading</div> : (
           <div>
             <Popup trigger={<Button>Add Job</Button>}

@@ -14,8 +14,8 @@ const Wrapper = styled.div`
 const droppableStyle = {
     backgroundColor: '#555',
     color: 'white',
-    width: '350px',
-    height: '400px',
+    width: '200px',
+    height: '1000px',
     margin: '10px',
 };
 

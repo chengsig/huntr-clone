@@ -1,28 +1,12 @@
 {
   "applied": [
     {
-      "id": "one",
-      "company": "DoorDash",
-      "position": "Software Engineer, Front-End",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
-    },
-    {
       "id": "0e77bc88-6b49-4ac9-8a7d-253b46f26cb8",
       "company": "Flexport",
       "position": "Software Engineer",
       "url": "meg ",
       "date": "",
       "notes": "both\n"
-    },
-    {
-      "id": "093ddc61-a6c2-4e45-a4a3-1f1d5a8cb0f4",
-      "company": "Uber",
-      "position": "Software Engineer",
-      "url": "https://www.linkedin.com/jobs/view/1215662335/",
-      "date": "6/1/2019",
-      "notes": "cold apply"
     },
     {
       "id": "9ad79e1d-4d1a-4253-a2b1-9420175aa124",
@@ -49,38 +33,6 @@
       "notes": ""
     },
     {
-      "id": "a4703bea-4066-4f99-a66e-c9ba6e7a42f2",
-      "company": "The League",
-      "position": "Engineering Internship",
-      "url": "",
-      "date": "Jun 5, 2019",
-      "notes": ""
-    },
-    {
-      "id": "f247b65b-6d98-4a14-beb8-a44003189a33",
-      "company": "Wish",
-      "position": "Software Engineering Intern - Fall 2019",
-      "url": "",
-      "date": "Jun 5, 2019",
-      "notes": ""
-    },
-    {
-      "id": "abbd0e41-f776-47ce-a407-016ff6944eaa",
-      "company": "Fivetran",
-      "position": "Software Engineer Internship",
-      "url": "",
-      "date": "",
-      "notes": "Tech Equity Pipeline Program"
-    },
-    {
-      "id": "e90933de-6ea0-4069-a847-33d52bf7890e",
-      "company": "Apple",
-      "position": "Frontend Engineer 200039548",
-      "url": "",
-      "date": "Jun 3, 2019",
-      "notes": ""
-    },
-    {
       "id": "0531f812-dc00-4ffa-b70a-43fedd6143df",
       "company": "BlackRock",
       "position": "Associate, Software Developer (Python) - San Francisco",
@@ -103,6 +55,102 @@
       "url": "https://jobs.lever.co/palantir/12db3e3a-33ca-4896-b4a5-c853eec3d270/apply",
       "date": "",
       "notes": "Proudest achievement:\nI recently built my own job board, cloning huntr.co. The original reason was simple, I ran out of free job space and decided to use technologies I know to build a copy. The process ended up involving following several tutorials, reading new technology documentation, and hours of debugging, but the end result is rewarding. Now I track my job application process on my own huntr!\n\nYou can check out a simple version with fake backend at: https://vigilant-banach-5a1a7c.netlify.com/\n\n\nwhy:\nBecause I love working with data and I enjoy problem solving. I have a diverse background with 4+ experience in the financial services sector, genetics research, pharmaceutical company operations, hollywood internship experience, and full-stack web development training. Wherever I go, I always excel at problem solving. I am a fast learner and I believe I will be a good fit!"
+    },
+    {
+      "id": "fee99815-a4cd-4d30-b753-48ffebe3cfaf",
+      "company": "Dropbox",
+      "position": "Software Engineer",
+      "url": "https://www.dropbox.com/jobs/listing/1074846/apply?gh_src=aonhf1",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "7d1f58a8-9bb1-4d53-99a7-c0aaee6c648f",
+      "company": "Hackerone",
+      "position": "Software Engineer",
+      "url": "https://jobs.lever.co/hackerone/41586444-e86e-44ca-afb2-ea19eca0df34/",
+      "date": "",
+      "notes": "cold apply through glassdoor"
+    },
+    {
+      "id": "b5ffe09a-161d-48ba-a9f5-7e78349a03b6",
+      "company": "pMD",
+      "position": "Software Engineer",
+      "url": "https://jobs.lever.co/pmdsoft/37bfda2f-bd89-45c8-a5f6-1a2d1f709f45",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "10f5eba7-21bd-48c7-b412-8ed41e3acb12",
+      "company": "Vise AI",
+      "position": "Software Engineer",
+      "url": "https://angel.co/company/vise-ai/jobs/131214-fullstack-frontend-software-engineer-sf-only",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "7d9cfa27-85b2-495a-8a50-557a7c0a483b",
+      "company": "Alpha Medical",
+      "position": "Front End Software Engineer",
+      "url": "https://jobs.lever.co/helloalpha/986e3262-08de-4c8c-9ffd-ca673a2726bd/",
+      "date": "",
+      "notes": "cold apply on lever cause cynthia got though screening"
+    },
+    {
+      "id": "726061cf-cb1f-496b-9e33-296e2664a0b8",
+      "company": "Render",
+      "position": "Full-Stack Engineer",
+      "url": "https://jobs.lever.co/render/4fb07b09-f9c2-4142-bb38-0420b3c1ab55/",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "e9ef85b8-fd56-456c-9e50-e11705f31f24",
+      "company": "Zendesk",
+      "position": "Backend Software Engineer, Sunshine",
+      "url": "https://jobs.lever.co/zendesk/5e2cd823-2a69-41f7-b167-ae3623cf34ac",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "1fe7f593-3ebf-4fd3-83f0-1016525f88b9",
+      "company": "Lime",
+      "position": "Software Engineer, Backend",
+      "url": "https://jobs.lever.co/limebike/e6bc32c5-65c0-4c71-a38b-9df622fc462f",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "24875caa-eba3-443c-8f5f-6b0bbbc24456",
+      "company": "Cloudflare",
+      "position": "Software Engineer",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/1522853",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "443ef975-8742-434b-be6d-40d9e6a5c839",
+      "company": "Clarify Health Solutions",
+      "position": "Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/1342771733/?trk=eml-apply-confirm-applied-job&midToken=AQEY9vovt62sJg&trkEmail=eml-jobs_applicant_applied-null-11-null-null-3hp57s~jxfjlc1d~fc-null-jobs~view",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "3843a9b3-7d02-42d5-8218-c88ea2aebd5a",
+      "company": "Autodesk",
+      "position": "Frontend Engineer",
+      "url": "https://autodesk.taleo.net/careersection/careersection/adsk_gen/jobdetail.ftl",
+      "date": "",
+      "notes": "referal through Saoji"
+    },
+    {
+      "id": "099454d4-fcf2-4722-b83c-e20528c2aea1",
+      "company": "WW International (formerly Weight Watchers)",
+      "position": "Full Stack Software Engineer",
+      "url": "https://jobs.jobvite.com/ww-corporate/job/olvS9fwB/apply",
+      "date": "",
+      "notes": "cold apply"
     }
   ],
   "phoneScreen": [],
@@ -206,6 +254,80 @@
       "url": "",
       "date": "",
       "notes": ""
+    },
+    {
+      "id": "4673c1ce-1465-4900-a75e-a14ab5c341f4",
+      "company": "The Climate Company",
+      "position": "Software Engineer, backend",
+      "url": "https://jobs.jobvite.com/the-climate-corporation/job/oG809fwH",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "61d4250c-e638-4813-8ff9-133916317968",
+      "company": "Notable",
+      "position": "Software Engineer",
+      "url": "https://hire.withgoogle.com/public/jobs/notablehealthcom/view/P_AAAAAAEAAADExNKmpfNDX-?trackingTag=notableCom",
+      "date": "",
+      "notes": "cold apply"
+    },
+    {
+      "id": "1db8fecf-2312-4ee1-92dd-731087270ec0",
+      "company": "Lumi Labs",
+      "position": "Software Engineer, recent grad",
+      "url": "https://lumi-labs.workable.com/jobs/784969/",
+      "date": "",
+      "notes": "internapalooza"
+    }
+  ],
+  "itsBeenWayTooLong": [
+    {
+      "id": "2b08febc-8429-4d95-bba3-61f044f3e129",
+      "company": "DoorDash",
+      "position": "Software Engineer, Front-End",
+      "url": "https://www.linkedin.com/jobs/view/1215662335/",
+      "date": "6/1/2019",
+      "notes": "cold apply"
+    },
+    {
+      "id": "67454e57-dafc-4b5d-8e23-d955f0b52156",
+      "company": "Uber",
+      "position": "Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/1215662335/",
+      "date": "6/1/2019",
+      "notes": "cold apply"
+    },
+    {
+      "id": "af3d9e8f-0927-4830-a93a-c958f3021dff",
+      "company": "The League",
+      "position": "Engineering Internship",
+      "url": "",
+      "date": "Jun 5, 2019",
+      "notes": ""
+    },
+    {
+      "id": "3c5ef08f-ec91-4dcd-8758-e109c93938a5",
+      "company": "Wish",
+      "position": "Software Engineering Intern - Fall 2019",
+      "url": "",
+      "date": "Jun 5, 2019",
+      "notes": ""
+    },
+    {
+      "id": "b06e9118-eefc-4ba6-b42d-cd2c45579270",
+      "company": "Apple",
+      "position": "Frontend Engineer 200039548",
+      "url": "",
+      "date": "Jun 3, 2019",
+      "notes": ""
+    },
+    {
+      "id": "b10e379b-ccd3-4bb3-842a-7ec6ec14fe6c",
+      "company": "Fivetran",
+      "position": "Software Engineer Internship",
+      "url": "",
+      "date": "",
+      "notes": "Tech Equity Pipeline Program"
     }
   ]
 }
