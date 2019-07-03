@@ -2,8 +2,8 @@
 
 import axios from 'axios';
 
-//const BASE_API_URL = "https://json-server-heroku-cg.herokuapp.com";
-const BASE_API_URL = "http://localhost:5000"
+const BASE_API_URL = "https://json-server-heroku-cg.herokuapp.com";
+//const BASE_API_URL = "http://localhost:5000"
 
 
 /** Fetch list of jobs */
